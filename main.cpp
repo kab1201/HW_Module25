@@ -89,7 +89,7 @@ int main()
 {
 	setlocale(LC_ALL, "");
 
-	Database mysql_db(static_cast<string>("localhost"), static_cast<string>("root"), static_cast<string>("bdfqyj7MyS"), static_cast<string>("Chat_DB"), 3306);
+	Database mysql_db(static_cast<string>("localhost"), static_cast<string>("root"), static_cast<string>("root_psw"), static_cast<string>("Chat_DB"), 3306);
 	mysql_db.init();
 	mysql_db.connect();
 	createDatabase(mysql_db);
